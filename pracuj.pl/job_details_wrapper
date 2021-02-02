@@ -1,1 +1,23 @@
+from bs4 import BeautifulSoup
+import requests
+
+url = "https://www.pracuj.pl/praca/tester%20oprogramowania;kw?rd=30"
+
+response = requests.get(url)
+
+data = response.text
+
+soup = BeautifulSoup(data, 'html.parser')
+
+jobs = soup.find_all('div', {'class':'offer'})
+
+for job in jobs:
+    title = job.find('a', {'class': 'offer-details__title-link'}).text
+    location_tag = job.find('li', {'class': 'offer-labels__item offer-labels__item--location'}).text
+    date = job.find('span', {'class':'offer-actions__date'}).text
+    link = job.find('a', {'class': 'offer-details__title-link'}).get('href')
+
+    print('Job title:', title, '\nlocation:', location_tag, '\nDate:', date, '\nlink:', link)
+
+
 
