@@ -1,4 +1,4 @@
-# Extracting data pieces from one web page.
+# Extract data pieces from one web page.
 from bs4 import BeautifulSoup
 import requests
 
