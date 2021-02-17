@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import requests
+from requests import get
 
 url = "https://www.olx.pl/nieruchomosci/mieszkania/sprzedaz/warszawa/"
 
