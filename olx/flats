@@ -1,0 +1,10 @@
+from bs4 import BeautifulSoup
+from requests import get
+url = "https://www.olx.pl/nieruchomosci/mieszkania/warszawa/"
+
+page = get(url)
+soup = BeautifulSoup(page.content)
+
+for offer in soup.find_all('div', class_='offer-wrapper'):
+    print(offer)
+
