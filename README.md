@@ -6,8 +6,7 @@
  
 2. I applied the HTML parsing technique, with  Python libraries: **BeautifulSoup** & **Requests**, to scrape the following Polish job search portals: 
 - **Pracuj.pl**
-- **nofluffjobs.com**
-- **otodom.pl**
+- **olx apartments for sale**
 
 _____________________________________________
 
