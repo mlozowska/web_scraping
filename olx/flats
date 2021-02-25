@@ -8,6 +8,7 @@ soup = BeautifulSoup(page.content)
 for offer in soup.find_all('div', class_='offer-wrapper'):
     footer = offer.find('td', class_='bottom-cell')
     location = footer.find('small', class_='breadcrumb').get_text()
-    print(location)
-    break
+    title = offer.find('strong').get_text().strip()
+    price = offer.find('p', class_='price').get_text()
+   
 
