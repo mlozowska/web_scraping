@@ -6,5 +6,8 @@ page = get(url)
 soup = BeautifulSoup(page.content)
 
 for offer in soup.find_all('div', class_='offer-wrapper'):
-    print(offer)
+    footer = offer.find('td', class_='bottom-cell')
+    location = footer.find('small', class_='breadcrumb').get_text()
+    print(location)
+    break
 
