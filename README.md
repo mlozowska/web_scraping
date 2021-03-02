@@ -4,7 +4,7 @@
 - scraped text data from a webpage;
  - crawled multiple webpages and scraped data from each of them.
  
-2. I applied the HTML parsing technique, with  Python libraries: **BeautifulSoup** & **Requests**, to scrape the following Polish job search portals: 
+2. I applied the HTML parsing technique, with  Python libraries: **BeautifulSoup** & **Requests**, to scrape the following Polish job search portal: 
 - **Pracuj.pl**
 
 _____________________________________________
